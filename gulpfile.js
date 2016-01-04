@@ -3,13 +3,13 @@ var gulp = require("gulp");
 var plug = require("gulp-load-plugins")();
 
 var source = [
-		'wwwroot/**/*.js', 
-		"!wwwroot/assets/lib/**/*.*"
+		'app/**/*.js', 
+		"!assets/lib/**/*.*"
 	];
 
 gulp.task('webserver', function() {
 	return gulp
-		.src('wwwroot')										// root
+		.src('')										// root
 		.pipe(plug.webserver({
 			livereload: true,							// livereload
 			directoryListing: true,

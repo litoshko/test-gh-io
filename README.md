@@ -1,1 +1,7 @@
-# test-gh-io
+> npm install -g gulp
+> npm install -g bower
+> npm install
+> bower install
+
+run server
+> gulp

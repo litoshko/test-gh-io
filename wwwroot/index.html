@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Steli App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="./assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/lib/font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body ng-controller="HomeController as vm">
+
+<!-- HEADER AND NAVBAR -->
+<header>
+    <nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Angular Routing Example</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+            <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
+
+<!-- MAIN CONTENT AND INJECTED VIEWS -->
+<div id="main">
+    
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+
+</div>
+
+
+<script src="assets/lib/jquery/dist/jquery.min.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/lib/angular/angular.min.js"></script>
+<script src="assets/lib/angular-route/angular-route.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/components/home/HomeController.js"></script>
+<script src="app/components/about/AboutController.js"></script>
+<script src="app/components/contact/ContactController.js"></script>
+
+</body>
+</html>
